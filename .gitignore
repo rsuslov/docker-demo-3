@@ -1,0 +1,4 @@
+#ignored files
+.terraform/
+mykey
+mykey.pub

@@ -29,9 +29,7 @@ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key 
 echo "deb http://pkg.jenkins.io/debian-stable binary/" >> /etc/apt/sources.list
 apt-get update
 apt-get install -y openjdk-8-jdk unzip
-sleep 5
 apt-get install -y jenkins=${JENKINS_VERSION}
-sleep 5
 apt-get install -y \
     apt-transport-https \
     ca-certificates \
@@ -48,7 +46,6 @@ sudo add-apt-repository \
 
 apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io
-sleep 10
 
 # enable docker and add perms
 sudo usermod -aG docker jenkins
