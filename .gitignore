@@ -1,7 +1,0 @@
-#ignored files
-.terraform/
-mykey
-mykey.pub
-terraform.tfstate
-terraform.tfstate.backup
-
