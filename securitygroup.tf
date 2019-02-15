@@ -19,7 +19,7 @@ resource "aws_security_group" "ecs-securitygroup" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["92.60.179.116/32"]
+      cidr_blocks = ["0.0.0.0/0"]
   } 
   tags {
     Name = "ecs"
@@ -40,7 +40,7 @@ resource "aws_security_group" "myapp-elb-securitygroup" {
       from_port = 80
       to_port = 80
       protocol = "tcp"
-      cidr_blocks = ["92.60.179.116/32"]
+      cidr_blocks = ["0.0.0.0/0"]
   } 
   tags {
     Name = "myapp-elb"
